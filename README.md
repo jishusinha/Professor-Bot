@@ -2,15 +2,6 @@
   <b> 𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑 𝐁𝐎𝐓</b>
 </h1>
 
-[![Stars](https://img.shields.io/github/stars/jishusinha/Professor-Bot?style=flat-square&color=yellow)](https://github.com/jishusinha/Professor-Bot/stargazers)
-[![Forks](https://img.shields.io/github/forks/jishusinha/Professor-Bot?style=flat-square&color=orange)](https://github.com/jishusinha/Professor-Bot/fork)
-[![Size](https://img.shields.io/github/repo-size/jishusinha/Professor-Bot?style=flat-square&color=green)](https://github.com/jishusinha/Professor-Bot)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/jishusinha/Professor-Bot)   
-[![Contributors](https://img.shields.io/github/contributors/jishusinha/Professor-Bot?style=flat-square&color=green)](https://github.com/jishusinha/Professor-Bot/graphs/contributors)
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/jishusinha/Professor-Bot/blob/main/LICENSE)
-[![Sparkline](https://stars.medv.io/jishusinha/Professor-Bot.svg)](https://stars.medv.io/jishusinha/Professor-Bot)
-
-
 
 ## Features
 
