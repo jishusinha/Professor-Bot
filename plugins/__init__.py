@@ -10,7 +10,7 @@ routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
 async def root_route_handler(request):
-    return web.json_response(text="ᴍᴀᴅᴇ ʙʏ: Mᴋɴ Bᴏᴛs™")
+    return web.json_response(text="Mᴀᴅᴇ Bʏ: Mᴀᴅғʟɪx Bᴏᴛᴢ™")
 
 async def web_server():
     web_app = web.Application(client_max_size=30000000)
@@ -32,7 +32,7 @@ async def ban_reply(bot, message):
 async def grp_bd(bot, message):
     buttons = [[InlineKeyboardButton('Sᴜᴩᴩᴏʀᴛ', url=f'https://t.me/{SUPPORT_CHAT}')]]
     chat = await db.get_chat(message.chat.id)
-    k = await message.reply(text=f"CHAT NOT ALLOWED 🐞\n\nMʏ Aᴅᴍɪɴs Hᴀs Rᴇsᴛʀɪᴄᴛᴇᴅ Mᴇ Fʀᴏᴍ Wᴏʀᴋɪɴɢ Hᴇʀᴇ ! Iғ Yᴏᴜ Wᴀɴᴛ Tᴏ Kɴᴏᴡ Mᴏʀᴇ Aʙᴏᴜᴛ Iᴛ Cᴏɴᴛᴀᴄᴛ Sᴜᴘᴘᴏʀᴛ..\nRᴇᴀꜱᴏɴ : <code>{chat['reason']}</code>.", reply_markup=InlineKeyboardMarkup(buttons))
+    k = await message.reply(text=f"𝙲𝙷𝙰𝚃 𝙽𝙾𝚃 𝙰𝙻𝙻𝙾𝚆𝙴𝙳 🐞\n\nMʏ Aᴅᴍɪɴs Hᴀs Rᴇsᴛʀɪᴄᴛᴇᴅ Mᴇ Fʀᴏᴍ Wᴏʀᴋɪɴɢ Hᴇʀᴇ ! Iғ Yᴏᴜ Wᴀɴᴛ Tᴏ Kɴᴏᴡ Mᴏʀᴇ Aʙᴏᴜᴛ Iᴛ Cᴏɴᴛᴀᴄᴛ Sᴜᴘᴘᴏʀᴛ..\nRᴇᴀꜱᴏɴ : <code>{chat['reason']}</code>.", reply_markup=InlineKeyboardMarkup(buttons))
     try: await k.pin()
     except: pass
     await bot.leave_chat(message.chat.id)
