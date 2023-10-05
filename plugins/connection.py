@@ -12,7 +12,7 @@ logger.setLevel(logging.ERROR)
 async def addconnection(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"Yᴏᴜ Aʀᴇ Aɴᴏɴʏᴍᴏᴜs Aᴅᴍɪɴ. Usᴇ /connect {message.chat.id} Iɴ PM")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -20,9 +20,10 @@ async def addconnection(client, message):
             cmd, group_id = message.text.split(" ", 1)
         except:
             await message.reply_text(
-                "<b>Enter in correct format!</b>\n\n"
-                "<code>/connect groupid</code>\n\n"
-                "<i>Get your Group id by adding this bot to your group and use  <code>/id</code></i>",
+                "<b>Eɴᴛᴇʀ Iɴ Cᴏʀʀᴇᴄᴛ Fᴏʀᴍᴀᴛ!</b>\n\n"
+                "<code>/connect Gʀᴏᴜᴘ ID</code>\n\n"
+                "<Gᴇᴛ Yᴏᴜʀ Gʀᴏᴜᴘ ID Bʏ Aᴅᴅɪɴɢ Tʜɪs Bᴏᴛ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Usᴇ  <code>/id</code></i>",
+                quote=Truei>Get your Group id by adding this bot to your group and use  <code>/id</code></i>",
                 quote=True
             )
             return
@@ -37,10 +38,10 @@ async def addconnection(client, message):
                 and st.status != enums.ChatMemberStatus.OWNER
                 and userid not in ADMINS
         ):
-            return await message.reply_text("You should be an admin in Given group!", quote=True)
+            return await message.reply_text("Yᴏᴜ Sʜᴏᴜʟᴅ Bᴇ Aɴ Aᴅᴍɪɴ Iɴ Gɪᴠᴇɴ Gʀᴏᴜᴘ!", quote=True)
     except Exception as e:
         logger.exception(e)
-        return await message.reply_text("Invalid Group ID!\n\nIf correct, Make sure I'm present in your group!!", quote=True,)
+        return await message.reply_text("Iɴᴠᴀʟɪᴅ Gʀᴏᴜᴘ ID!\n\nIғ Cᴏʀʀᴇᴄᴛ, Mᴀᴋᴇ Sᴜʀᴇ I'ᴍ Pʀᴇsᴇɴᴛ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ!!", quote=True,)
     try:
         st = await client.get_chat_member(group_id, "me")
         if st.status == enums.ChatMemberStatus.ADMINISTRATOR:
@@ -50,7 +51,7 @@ async def addconnection(client, message):
             addcon = await add_connection(str(group_id), str(userid))
             if addcon:
                 await message.reply_text(
-                    f"Successfully connected to **{title}**\nNow manage your group from my pm !",
+                    f"Sᴜᴄᴄᴇssғᴜʟʟʏ Cᴏɴɴᴇᴄᴛᴇᴅ Tᴏ **{title}**\nNᴏᴡ Mᴀɴᴀɢᴇ Yᴏᴜʀ Gʀᴏᴜᴘ Fʀᴏᴍ Mʏ PM !",
                     quote=True,
                     parse_mode=enums.ParseMode.MARKDOWN
                 )
@@ -61,22 +62,22 @@ async def addconnection(client, message):
                         parse_mode=enums.ParseMode.MARKDOWN
                     )
             else:
-                await message.reply_text("You're already connected to this chat!", quote=True)
+                await message.reply_text("Yᴏᴜ'ʀᴇ Aʟʀᴇᴀᴅʏ Cᴏɴɴᴇᴄᴛᴇᴅ Tᴏ Tʜɪs Cʜᴀᴛ !", quote=True)
         else:
-            await message.reply_text("Add me as an admin in group", quote=True)
+            await message.reply_text("Aᴅᴅ Mᴇ As Aɴ Aᴅᴍɪɴ Iɴ Gʀᴏᴜᴘ", quote=True)
     except Exception as e:
         logger.exception(e)
-        return await message.reply_text('Some error occurred! Try again later.', quote=True)
+        return await message.reply_text('Sᴏᴍᴇ Eʀʀᴏʀ Oᴄᴄᴜʀʀᴇᴅ! Tʀʏ Aɢᴀɪɴ Lᴀᴛᴇʀ.', quote=True)
      
 
 @Client.on_message((filters.private | filters.group) & filters.command('disconnect'))
 async def deleteconnection(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"Yᴏᴜ Aʀᴇ Aɴᴏɴʏᴍᴏᴜs Aᴅᴍɪɴ. Usᴇ /connect {message.chat.id} Iɴ PM")
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
-        await message.reply_text("Run /connections to view or disconnect from groups!", quote=True)
+        await message.reply_text("Usᴇ /connections Tᴏ Vɪᴇᴡ Oʀ Dɪsᴄᴏɴɴᴇᴄᴛ Fʀᴏᴍ Gʀᴏᴜᴘs !", quote=True)
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         group_id = message.chat.id
 
@@ -90,9 +91,9 @@ async def deleteconnection(client, message):
 
         delcon = await delete_connection(str(userid), str(group_id))
         if delcon:
-            await message.reply_text("Successfully disconnected from this chat", quote=True)
+            await message.reply_text("Sᴜᴄᴄᴇssғᴜʟʟʏ Dɪsᴄᴏɴɴᴇᴄᴛᴇᴅ Fʀᴏᴍ Tʜɪs Cʜᴀᴛ", quote=True)
         else:
-            await message.reply_text("This chat isn't connected to me!\nDo /connect to connect.", quote=True)
+            await message.reply_text("Tʜɪs Cʜᴀᴛ Isɴ'ᴛ Cᴏɴɴᴇᴄᴛᴇᴅ Tᴏ Mᴇ !\nDᴏ /connect Tᴏ Cᴏɴɴᴇᴄᴛ.", quote=True)
 
 
 @Client.on_message(filters.private & filters.command(["connections"]))
@@ -100,7 +101,7 @@ async def connections(client, message):
     userid = message.from_user.id
     groupids = await all_connections(str(userid))
     if groupids is None:
-        return await message.reply_text("There are no active connections!! Connect to some groups first.", quote=True)
+        return await message.reply_text("Tʜᴇʀᴇ Aʀᴇ Nᴏ Aᴄᴛɪᴠᴇ Cᴏɴɴᴇᴄᴛɪᴏɴs!! Cᴏɴɴᴇᴄᴛ Tᴏ Sᴏᴍᴇ Gʀᴏᴜᴘs Fɪʀsᴛ.", quote=True)
     buttons = []
     for groupid in groupids:
         try:
@@ -114,4 +115,4 @@ async def connections(client, message):
     if buttons:
         await message.reply_text("Your connected group details ;\n\n", reply_markup=InlineKeyboardMarkup(buttons), quote=True)
     else:
-        await message.reply_text("There are no active connections!! Connect to some groups first.", quote=True)
+        await message.reply_text("Tʜᴇʀᴇ Aʀᴇ Nᴏ Aᴄᴛɪᴠᴇ Cᴏɴɴᴇᴄᴛɪᴏɴs!! Cᴏɴɴᴇᴄᴛ Tᴏ Sᴏᴍᴇ Gʀᴏᴜᴘs Fɪʀsᴛ.", quote=True)
