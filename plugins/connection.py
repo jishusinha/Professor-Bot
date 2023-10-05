@@ -21,9 +21,8 @@ async def addconnection(client, message):
         except:
             await message.reply_text(
                 "<b>Eɴᴛᴇʀ Iɴ Cᴏʀʀᴇᴄᴛ Fᴏʀᴍᴀᴛ!</b>\n\n"
-                "<code>/connect Gʀᴏᴜᴘ ID</code>\n\n"
-                "<Gᴇᴛ Yᴏᴜʀ Gʀᴏᴜᴘ ID Bʏ Aᴅᴅɪɴɢ Tʜɪs Bᴏᴛ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Usᴇ  <code>/id</code></i>",
-                quote=Truei>Get your Group id by adding this bot to your group and use  <code>/id</code></i>",
+                "<code>/connect groupid</code>\n\n"
+                "<i>Get your Group id by adding this bot to your group and use  <code>/id</code></i>",
                 quote=True
             )
             return
