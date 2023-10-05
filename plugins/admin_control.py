@@ -258,9 +258,9 @@ async def user_info(client, message):
     if from_user is None:
         return await status_message.edit("Nᴏ Vᴀʟɪᴅ Usᴇʀ ID / Mᴇssᴀɢᴇ Sᴘᴇᴄɪғɪᴇᴅ")
     message_out_str = ""
-    message_out_str += f"<b>Fꜰɪʀꜱᴛ Nᴀᴍᴇ:</b> {from_user.first_name}\n"
+    message_out_str += f"<b>Fɪʀꜱᴛ Nᴀᴍᴇ:</b> {from_user.first_name}\n"
     last_name = from_user.last_name or "<b>Nᴏɴᴇ</b>"
-    message_out_str += f"<b>Lʟᴀꜱᴛ Nᴀᴍᴇ:</b> {last_name}\n"
+    message_out_str += f"<b>Lᴀꜱᴛ Nᴀᴍᴇ:</b> {last_name}\n"
     message_out_str += f"<b>Tᴇʟᴇɢʀᴀᴍ ID:</b> <code>{from_user.id}</code>\n"
     username = from_user.username or "<b>ɴᴏɴᴇ</b>"
     dc_id = from_user.dc_id or "[Uꜱᴇʀ Dᴏꜱᴇ'ᴛ Hᴀᴠᴇ A Vᴀʟɪᴅ DP]"
