@@ -17,9 +17,9 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[           
-            InlineKeyboardButton('📢 Uᴩᴅᴀᴛᴇꜱ 📢', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('Uᴩᴅᴀᴛᴇꜱ 📢', url=f'https://t.me/{SUPPORT_CHAT}')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴩ ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton('Hᴇʟᴩ ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
         ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
@@ -38,8 +38,8 @@ async def start(client, message):
             InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''), 
             InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/Madflix_Botz")
             ],[      
-            InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
-            InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+            InlineKeyboardButton("Hᴇʟᴩ 🏷️", callback_data="help"),
+            InlineKeyboardButton("Aʙᴏᴜᴛ 💌", callback_data="about")
         ]]
         m = await message.reply_sticker("CAACAgUAAxkBAAIDHmULwk9jCuCIJm_rMefrRv8gJlsKAAInAQACyJRkFOI9YoCRRKaaMAQ") 
         await asyncio.sleep(2)
@@ -52,7 +52,7 @@ async def start(client, message):
         except ChatAdminRequired:
             logger.error("MAKE SURE BOT IS ADMIN IN FORCESUB CHANNEL")
             return
-        btn = [[InlineKeyboardButton("Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ ✨", url=invite_link.invite_link)]]
+        btn = [[InlineKeyboardButton("Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ ⚡", url=invite_link.invite_link)]]
         if message.command[1] != "subscribe":
             try:
                 kk, file_id = message.command[1].split("_", 1)
@@ -74,8 +74,8 @@ async def start(client, message):
             InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''), 
             InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/Madflix_Botz")
             ],[      
-            InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
-            InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+            InlineKeyboardButton("Hᴇʟᴩ 🏷️", callback_data="help"),
+            InlineKeyboardButton("Aʙᴏᴜᴛ 💌", callback_data="about")
         ]]
         m = await message.reply_sticker("CAACAgUAAxkBAAIDHmULwk9jCuCIJm_rMefrRv8gJlsKAAInAQACyJRkFOI9YoCRRKaaMAQ")
         await asyncio.sleep(2)
@@ -90,7 +90,7 @@ async def start(client, message):
         pre = ""
         
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply("PLEASE WAIT......")
+        sts = await message.reply("Pʟᴇᴀsᴇ Wᴀɪᴛ......")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -100,7 +100,7 @@ async def start(client, message):
                     msgs=json.loads(file_data.read())
             except:
                 await sts.edit("FAILED")
-                return await client.send_message(LOG_CHANNEL, "UNABLE TO OPEN FILE.")
+                return await client.send_message(LOG_CHANNEL, "Uɴᴀʙʟᴇ Tᴏ Oᴘᴇɴ Fɪʟᴇ.")
             os.remove(file)
             BATCH_FILES[file_id] = msgs
         for msg in msgs:
@@ -127,7 +127,7 @@ async def start(client, message):
         return await sts.delete()
         
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("PLEASE WAIT....")
+        sts = await message.reply("Pʟᴇᴀsᴇ Wᴀɪᴛ....")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
@@ -187,7 +187,7 @@ async def start(client, message):
                 except: return
             return await msg.edit_caption(f_caption)
         except: pass
-        return await message.reply('NO SUCH FILE EXIST...')
+        return await message.reply('𝙽𝙾 𝚂𝚄𝙲𝙷 𝙵𝙸𝙻𝙴 𝙴𝚇𝙸𝚂𝚃...')
         
     files = files_[0]
     title = files.file_name
@@ -228,15 +228,15 @@ async def channel_info(bot, message):
 @Client.on_message(filters.command('delete') & filters.user(ADMINS))
 async def delete(bot, message):
     reply = message.reply_to_message
-    if reply and reply.media: msg = await message.reply("Processing...⏳", quote=True)
-    else: return await message.reply('Reply to file with /delete which you want to delete', quote=True)
+    if reply and reply.media: msg = await message.reply("Pʀᴏᴄᴇssɪɴɢ...⏳", quote=True)
+    else: return await message.reply('Rᴇᴘʟʏ Tᴏ Fɪʟᴇ Wɪᴛʜ /delete Wʜɪᴄʜ Yᴏᴜ Wᴀɴᴛ Tᴏ Dᴇʟᴇᴛᴇ', quote=True)
     for file_type in ("document", "video", "audio"):
         media = getattr(reply, file_type, None)
         if media is not None: break
-    else: return await msg.edit('This Is Not Supported File Format')
+    else: return await msg.edit('Tʜɪs Is Nᴏᴛ Sᴜᴘᴘᴏʀᴛᴇᴅ Fɪʟᴇ Fᴏʀᴍᴀᴛ')
     file_id, file_ref = unpack_new_file_id(media.file_id)
     result = await Media.collection.delete_one({'_id': file_id})
-    if result.deleted_count: await msg.edit('File Is Successfully Deleted From Database')
+    if result.deleted_count: await msg.edit('Fɪʟᴇ Is Sᴜᴄᴄᴇssғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ Fʀᴏᴍ Dᴀᴛᴀʙᴀsᴇ')
     else:
         file_name = re.sub(r"(_|\-|\.|\+)", " ", str(media.file_name))
         result = await Media.collection.delete_many({
@@ -244,31 +244,31 @@ async def delete(bot, message):
             'file_size': media.file_size,
             'mime_type': media.mime_type
             })
-        if result.deleted_count: await msg.edit('File Is Successfully Deleted From Database')
+        if result.deleted_count: await msg.edit('Fɪʟᴇ Is Sᴜᴄᴄᴇssғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ Fʀᴏᴍ Dᴀᴛᴀʙᴀsᴇ')
         else:
             result = await Media.collection.delete_many({
                 'file_name': media.file_name,
                 'file_size': media.file_size,
                 'mime_type': media.mime_type
             })
-            if result.deleted_count: await msg.edit('File Is Successfully Deleted From Database')
+            if result.deleted_count: await msg.edit('Fɪʟᴇ Is Sᴜᴄᴄᴇssғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ Fʀᴏᴍ Dᴀᴛᴀʙᴀsᴇ')
             else: await msg.edit('File Not Found In Database')
 
 
 @Client.on_message(filters.command('deleteall') & filters.user(ADMINS))
 async def delete_all_index(bot, message):
     button = [[
-        InlineKeyboardButton("YES", callback_data="autofilter_delete")
+        InlineKeyboardButton("Yᴇs", callback_data="autofilter_delete")
         ],[
-        InlineKeyboardButton("CANCEL", callback_data="close_data")
+        InlineKeyboardButton("Cᴀɴᴄᴇʟ", callback_data="close_data")
     ]]
-    await message.reply_text('This Will Delete All Indexed Files.\ndo You Want To Continue??', quote=True, reply_markup=InlineKeyboardMarkup(button))
+    await message.reply_text('Tʜɪs Wɪʟʟ Dᴇʟᴇᴛᴇ Aʟʟ Iɴᴅᴇxᴇᴅ Fɪʟᴇs.\nDᴏ Yᴏᴜ Wᴀɴᴛ Tᴏ Cᴏɴᴛɪɴᴜᴇ ??', quote=True, reply_markup=InlineKeyboardMarkup(button))
             
 
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.message.edit('Succesfully Deleted All The Indexed Files.')
+    await message.message.edit('Sᴜᴄᴄᴇsғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ Aʟʟ Tʜᴇ Iɴᴅᴇxᴇᴅ Fɪʟᴇs.')
 
 
 @Client.on_message(filters.command('settings'))
@@ -302,17 +302,17 @@ async def settings(client, message):
     settings = await get_settings(grp_id)
     if settings is not None:
         buttons = [[
-            InlineKeyboardButton(f"ꜰɪʟᴛᴇʀ ʙᴜᴛᴛᴏɴ : {'sɪɴɢʟᴇ' if settings['button'] else 'ᴅᴏᴜʙʟᴇ'}", f'setgs#button#{settings["button"]}#{str(grp_id)}')
+            InlineKeyboardButton(f"Fɪʟᴛᴇʀ Bᴜᴛᴛᴏɴ : {'Sɪɴɢʟᴇ' if settings['button'] else 'Dᴏᴜʙʟᴇ'}", f'setgs#button#{settings["button"]}#{str(grp_id)}')
             ],[
-            InlineKeyboardButton(f"ꜰɪʟᴇ ɪɴ ᴩᴍ ꜱᴛᴀʀᴛ: {'ᴏɴ' if settings['botpm'] else 'ᴏꜰꜰ'}", f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
+            InlineKeyboardButton(f"Fɪʟᴇ Iɴ PN Sᴛᴀʀᴛ: {'Oɴ' if settings['botpm'] else 'Oꜰꜰ'}", f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
             ],[                
-            InlineKeyboardButton(f"ʀᴇꜱᴛʀɪᴄᴛ ᴄᴏɴᴛᴇɴᴛ : {'ᴏɴ' if settings['file_secure'] else 'ᴏꜰꜰ'}", f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
+            InlineKeyboardButton(f"Rᴇꜱᴛʀɪᴄᴛ Cᴏɴᴛᴇɴᴛ : {'Oɴ' if settings['file_secure'] else 'Oꜰꜰ'}", f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
             ],[
-            InlineKeyboardButton(f"ɪᴍᴅʙ ɪɴ ꜰɪʟᴛᴇʀ : {'ᴏɴ' if settings['imdb'] else 'ᴏꜰꜰ'}", f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
+            InlineKeyboardButton(f"IMDB Iɴ Fɪʟᴛᴇʀ : {'Oɴ' if settings['imdb'] else 'Oꜰꜰ'}", f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
             ],[
-            InlineKeyboardButton(f"ꜱᴩᴇʟʟɪɴɢ ᴄʜᴇᴄᴋ : {'ᴏɴ' if settings['spell_check'] else 'ᴏꜰꜰ'}", f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
+            InlineKeyboardButton(f"Sᴩᴇʟʟɪɴɢ Cʜᴇᴄᴋ : {'Oɴ' if settings['spell_check'] else 'Oꜰꜰ'}", f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
             ],[
-            InlineKeyboardButton(f"ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇ : {'ᴏɴ' if settings['welcome'] else 'ᴏꜰꜰ'}", f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
+            InlineKeyboardButton(f"ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇ : {'Oɴ' if settings['welcome'] else 'Oꜰꜰ'}", f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
         ]]
         await message.reply_text(
             text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢꜱ Fᴏʀ {title} Aꜱ Yᴏᴜʀ Wɪꜱʜ ⚙</b>",
