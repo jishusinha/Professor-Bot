@@ -7,7 +7,7 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
     
     HELP_TXT = "Hᴇʏ {}\nHᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"
 
-    ABOUT_TXT = """<b>✯ Mʏ ɴᴀᴍᴇ: {}
+    ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
 ✯ Dᴇᴠᴇʟᴏᴩᴇʀ: <a herf=https://t.me/Madflix_Officials>Tʜɪs Pᴇʀsᴏɴ</a>
 ✯ Cᴏᴅᴇᴅ Oɴ: Pʏᴛʜᴏɴ/Pʏʀᴏɢʀᴀᴍ
 ✯ Mʏ DᴀᴛᴀBᴀꜱᴇ: Mᴏɴɢᴏ-DB
