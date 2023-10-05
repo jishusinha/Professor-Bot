@@ -312,7 +312,7 @@ async def settings(client, message):
             ],[
             InlineKeyboardButton(f"Sᴩᴇʟʟɪɴɢ Cʜᴇᴄᴋ : {'Oɴ' if settings['spell_check'] else 'Oꜰꜰ'}", f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
             ],[
-            InlineKeyboardButton(f"ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇ : {'Oɴ' if settings['welcome'] else 'Oꜰꜰ'}", f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
+            InlineKeyboardButton(f"Wᴇʟᴄᴏᴍᴇ Mᴇꜱꜱᴀɢᴇ : {'Oɴ' if settings['welcome'] else 'Oꜰꜰ'}", f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
         ]]
         await message.reply_text(
             text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢꜱ Fᴏʀ {title} Aꜱ Yᴏᴜʀ Wɪꜱʜ ⚙</b>",
