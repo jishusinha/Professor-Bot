@@ -7,10 +7,10 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
     
     HELP_TXT = "Hᴇʏ {}\nHᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"
 
-    ABOUT_TXT = """<b>✯ Mʏ ɴᴀᴍᴇ: {}
+    ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
 ✯ Dᴇᴠᴇʟᴏᴩᴇʀ: <a herf=https://t.me/Madflix_Officials>Tʜɪs Pᴇʀsᴏɴ</a>
 ✯ Cᴏᴅᴇᴅ Oɴ: Pʏᴛʜᴏɴ/Pʏʀᴏɢʀᴀᴍ
-✯ Mʏ DᴀᴛᴀBᴀꜱᴇ: Mᴏɴɢᴏ-ᴅʙ
+✯ Mʏ DᴀᴛᴀBᴀꜱᴇ: Mᴏɴɢᴏ-DB
 ✯ Mʏ Sᴇʀᴠᴇʀ: Hᴇʀᴏᴋᴜ
 ✯ Mʏ Vᴇʀꜱɪᴏɴ: Pʀᴏꜰᴇꜱꜱᴏʀ-Bᴏᴛ ᴠ4.5.0</b>"""
    
@@ -26,11 +26,8 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
 <b>⪼ Cᴏᴍᴍᴀɴᴅ & Usᴀɢᴇ</b>
 ➪ /link › Rᴇᴘʟʏ Tᴏ Aɴʏ Mᴇᴅɪᴀ Tᴏ Gᴇᴛ Tʜᴇ Lɪɴᴋ 
 ➪ /batch › Tᴏ Cʀᴇᴀᴛᴇ Lɪɴᴋ Fᴏʀ Mᴜʟᴛɪᴘʟᴇ Mᴇᴅɪᴀ
-
-<b>⪼ EG:</b>
-</code>/batch https://t.me/Madflix_Botz https://t.me/Madflix_Botz</code>"""
   
-    FILTER_TXT = "Sᴇʟᴇᴄᴛ Wʜɪᴄʜ Oɴᴇ Yᴏᴜ Wᴀɴᴛ...✨"
+    FILTER_TXT = "Sᴇʟᴇᴄᴛ Wʜɪᴄʜ Oɴᴇ Yᴏᴜ Wᴀɴᴛ..."
     
     GLOBALFILTER_TXT = """<b>Hᴇʟᴘ Fᴏʀ Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs</b>
 
@@ -83,8 +80,8 @@ Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs
 
 <Ai>Aᴜᴛᴏ Fɪʟᴛᴇʀ Is Tʜᴇ Fᴇᴀᴛᴜʀᴇ Tᴏ Fɪʟᴛᴇʀ & Sᴀᴠᴇ Tʜᴇ Fɪʟᴇs Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Fʀᴏᴍ Cᴜᴀɴɴᴇʟ Tᴏ Gʀᴏᴜᴘ. Yᴏᴜ Cᴀɴ Usᴇ Tʜᴇ Fᴏʟʟᴏᴡɪɴɢ Cᴏᴍᴍᴀɴᴅ Tᴏ ᴏɴ/ᴏғғ Tʜᴇ AᴜᴛᴏFɪʟᴛᴇʀ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ</i>
 
-• /autofilter on - ᴀᴜᴛᴏғɪʟᴛᴇʀ ᴇɴᴀʙʟᴇ ɪɴ ʏᴏʀ ᴄʜᴀᴛ
-• /autofilter off - ᴀᴜᴛᴏғɪʟᴛᴇʀ ᴅɪsᴀʙʟᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ
+• /autofilter on - Aᴜᴛᴏғɪʟᴛᴇʀ Eɴᴀʙʟᴇ Iɴ Yᴏᴜʀ Cʜᴀᴛ
+• /autofilter off - Aᴜᴛᴏғɪʟᴛᴇʀ Dɪsᴀʙʟᴇ Iɴ Yᴏᴜʀ Cʜᴀᴛ
 
 <Ob>Oᴛʜᴇʀ Cᴏᴍᴍᴀɴᴅs:</b>
 • /set_template - Sᴇᴛ Iᴍᴅʙ Tᴇᴍᴘʟᴀᴛᴇ Fᴏʀ Yᴏᴜʀ Gʀᴏᴜᴘ 
@@ -126,29 +123,29 @@ Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs
 • /clear_junk_group - Cʟᴇᴀʀ Aᴅᴅ Rᴇᴍᴏᴠᴇᴅ Gʀᴏᴜᴘ Oʀ Dᴇᴀᴄᴛɪᴠᴀᴛᴇᴅ Gʀᴏᴜᴘs Oɴ Dʙ"""
 
 
-    STATUS_TXT = """<b>◉ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ: <code>{}</code>
-◉ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ: <code>{}</code>  
-◉ ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ: <code>{}</code>
-◉ ᴜꜱᴇᴅ ᴅʙ ꜱɪᴢᴇ: <code>{}</code>
-◉ ꜰᴇᴇᴇ ᴅʙ ꜱɪᴢᴇ: <code>{}</code></b>"""
+    STATUS_TXT = """<b>◉ Tᴏᴛᴀʟ Fɪʟᴇꜱ: <code>{}</code>
+◉ Tᴏᴛᴀʟ Uꜱᴇʀꜱ: <code>{}</code>  
+◉ Tᴏᴛᴀʟ Cʜᴀᴛꜱ: <code>{}</code>
+◉ Uꜱᴇᴅ DB Sɪᴢᴇ: <code>{}</code>
+◉ Fʀᴇᴇ DB Sɪᴢᴇ: <code>{}</code></b>"""
 
     LOG_TEXT_G = """<b>#ɴᴇᴡ_ɢʀᴏᴜᴩ
 
-◉ ɢʀᴏᴜᴩ: {a}
-◉ ɢ-ɪᴅ: <code>{b}</code>
-◉ ʟɪɴᴋ: @{c}
-◉ ᴍᴇᴍʙᴇʀꜱ: <code>{d}</code>
-◉ ᴀᴅᴅᴇᴅ ʙʏ: {e}
+◉ Gʀᴏᴜᴩ: {a}
+◉ Gʀᴏᴜᴘ ID: <code>{b}</code>
+◉ Lɪɴᴋ: @{c}
+◉ Mᴇᴍʙᴇʀꜱ: <code>{d}</code>
+◉ Aᴅᴅᴇᴅ Bʏ: {e}
 
-◉ ʙʏ: @{f}</b>"""
+◉ Bʏ: @{f}</b>"""
   
     LOG_TEXT_P = """#ɴᴇᴡ_ᴜꜱᴇʀ
     
-◉ ᴜꜱᴇʀ-ɪᴅ: <code>{}</code>
-◉ ᴀᴄᴄ-ɴᴀᴍᴇ: {}
-◉ ᴜꜱᴇʀɴᴀᴍᴇ: @{}
+◉ Uꜱᴇʀ ID: <code>{}</code>
+◉ Aᴄᴄᴏᴜɴᴛ Nᴀᴍᴇ: {}
+◉ Uꜱᴇʀɴᴀᴍᴇ: @{}
 
-◉ ʙʏ: @{}</b>"""
+◉ Bʏ: @{}</b>"""
   
     GROUPMANAGER_TXT = """<b>Hᴇʟᴩ Fᴏʀ GʀᴏᴜᴩMᴀɴᴀɢᴇʀ</b>
 
@@ -189,7 +186,7 @@ Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs
     
     CREATOR_REQUIRED = "❗<b>Yᴏᴜ Hᴀᴠᴇ To Bᴇ Tʜᴇ Gʀᴏᴜᴩ Cʀᴇᴀᴛᴏʀ Tᴏ Dᴏ Tʜᴀᴛ</b>"
       
-    INPUT_REQUIRED = "❗ **Aʀɢᴜᴍᴇɴ Rqᴜɪʀᴇᴅ**"
+    INPUT_REQUIRED = "❗ **Aʀɢᴜᴍᴇɴᴛ Rqᴜɪʀᴇᴅ**"
       
     KICKED = "✔️ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ Kɪᴄᴋᴇᴅ {} Mᴇᴍʙᴇʀꜱ Acᴄᴏʀᴅɪɴɢ To Tʜᴇ Aʀɢᴜᴍᴇɴᴛꜱ Prᴏᴠɪᴅᴇᴅ"
       
@@ -218,7 +215,7 @@ Fʀᴇᴇ Dɪꜱᴋ: {}"""
 
 Wᴇʟᴄᴏᴍᴇ ᴛᴏ {chat}.
 
-ꜱʜᴀʀᴇ & ꜱᴜᴩᴩᴏʀᴛ, ʀᴇqᴜᴇꜱᴛ ʏᴏᴜ ᴡᴀɴᴛᴇᴅ ᴍᴏᴠɪᴇꜱ"""
+Sʜᴀʀᴇ & Sᴜᴩᴩᴏʀᴛ, Rᴇqᴜᴇꜱᴛ Yᴏᴜ Wᴀɴᴛᴇᴅ Mᴏᴠɪᴇꜱ"""
   
     IMDB_TEMPLATE = """<b>Qᴜᴇʀʏ: {query}</b>
 
