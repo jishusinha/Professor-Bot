@@ -17,9 +17,9 @@ async def sng(bot, message):
           await mee.delete()
           try:
             await mee.delete()
-            await bot.send_message(chat_id, text = rpl, reply_to_message_id = message.id, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"t.me/Madflix_Botz")]]))
+            await bot.send_message(chat_id, text = rpl, reply_to_message_id = message.id, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Uᴘᴅᴀᴛᴇs", url = f"t.me/Madflix_Botz")]]))
           except Exception as e:                            
-             await message.reply_text(f"I Cᴀɴ'ᴛ Fɪɴᴅ A Sᴏɴɢ Wɪᴛʜ `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"t.me/Madflix_Botz")]]))
+             await message.reply_text(f"I Cᴀɴ'ᴛ Fɪɴᴅ A Sᴏɴɢ Wɪᴛʜ `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Uᴘᴅᴀᴛᴇs", url = f"t.me/Madflix_Botz")]]))
 
 
 def search(song):
