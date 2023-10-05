@@ -15,7 +15,7 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
 ✯ Mʏ Vᴇʀꜱɪᴏɴ: Pʀᴏꜰᴇꜱꜱᴏʀ Bᴏᴛ ᴠ4.5.0</b>"""
    
     SOURCE_TXT = """<b>NOTE:</b>
-- Sᴏᴜʀᴄᴇ Cᴏᴅᴇ Hᴇʀᴇ ◉› :<a href=https://t.me/MadflixSupportXBot>Cʟɪᴄᴋ Hᴇʀᴇ</a>
+- Sᴏᴜʀᴄᴇ Cᴏᴅᴇ Hᴇʀᴇ ◉› :<a href=https://github.com/jishusinha/Professor-Bot->Cʟɪᴄᴋ Hᴇʀᴇ</a>
 
 <b>Dᴇᴠᴇʟᴏᴩᴇʀ: <a herf=https://t.me/Madflix_Officials>Mᴀᴅғʟɪx Bᴏᴛᴢ</a></b>"""
 
