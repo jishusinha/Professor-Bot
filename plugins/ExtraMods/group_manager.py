@@ -21,9 +21,9 @@ async def ban_user(_, message):
     except Exception as error: await message.reply_text(str(error))                    
     else:
         if str(user_id).lower().startswith("@"):
-            await message.reply_text(f"Someone else is dusting off..! \n{user_first_name} \nIs forbidden.")                              
+            await message.reply_text(f"Sᴏᴍᴇᴏɴᴇ Eʟsᴇ Is Dᴜsᴛɪɴɢ Oғғ...! \n{user_first_name} \nIs Fᴏʀʙɪᴅᴅᴇɴ.")                              
         else:
-            await message.reply_text(f"Someone else is dusting off..! \n<a href='tg://user?id={user_id}'>{user_first_name}</a> Is forbidden")                      
+            await message.reply_text(f"Sᴏᴍᴇᴏɴᴇ Eʟsᴇ Is Dᴜsᴛɪɴɢ Oғғ...! \n<a href='tg://user?id={user_id}'>{user_first_name}</a> Is Fᴏʀʙɪᴅᴅᴇɴ")                      
             
 
 @Client.on_message(filters.command("tban"))
@@ -38,9 +38,9 @@ async def temp_ban_user(_, message):
     except Exception as error: await message.reply_text(str(error))
     else:
         if str(user_id).lower().startswith("@"):
-            await message.reply_text(f"Someone else is dusting off..!\n{user_first_name}\nbanned for {message.command[1]}!")
+            await message.reply_text(f"Sᴏᴍᴇᴏɴᴇ Eʟsᴇ Is Dᴜsᴛɪɴɢ Oғғ..!\n{user_first_name}\nBᴀɴɴᴇᴅ Fᴏʀ {message.command[1]}!")
         else:
-            await message.reply_text(f"Someone else is dusting off..!\n<a href='tg://user?id={user_id}'>Lavane</a>\n banned for {message.command[1]}!")
+            await message.reply_text(f"Sᴏᴍᴇᴏɴᴇ Eʟsᴇ Is Dᴜsᴛɪɴɢ Oғғ..!\n<a href='tg://user?id={user_id}'>Lavane</a>\n Bᴀɴɴᴇᴅ Fᴏʀ {message.command[1]}!")
                 
 
 @Client.on_message(filters.command(["unban", "unmute"]))
@@ -52,9 +52,9 @@ async def un_ban_user(_, message):
     except Exception as error: await message.reply_text(str(error))
     else:
         if str(user_id).lower().startswith("@"):
-            await message.reply_text(f"Okay, changed ... now {user_first_name} To You can join the group!")
+            await message.reply_text(f"Oᴋᴀʏ, Cʜᴀɴɢᴇᴅ ... Nᴏᴡ {user_first_name} Tᴏ Yᴏᴜ Cᴀɴ Jᴏɪɴ Tʜᴇ Gʀᴏᴜᴘ !")
         else:
-            await message.reply_text(f"Okay, changed ... now <a href='tg://user?id={user_id}'>{user_first_name}</a> To You can join the group!")           
+            await message.reply_text(f"Oᴋᴀʏ, Cʜᴀɴɢᴇᴅ ... Nᴏᴡ <a href='tg://user?id={user_id}'>{user_first_name}</a> Tᴏ Yᴏᴜ Cᴀɴ Jᴏɪɴ Tʜᴇ Gʀᴏᴜᴘ !")           
             
 
 @Client.on_message(filters.command("mute"))
@@ -66,9 +66,9 @@ async def mute_user(_, message):
     except Exception as error: await message.reply_text(str(error))
     else:
         if str(user_id).lower().startswith("@"):
-            await message.reply_text(f"👍🏻 {user_first_name} Lavender's mouth is shut! 🤐")
+            await message.reply_text(f"👍🏻 {user_first_name} Lᴀᴠᴇɴᴅᴇʀ's Mᴏᴜᴛʜ Is Sʜᴜᴛ ! 🤐")
         else:
-            await message.reply_text(f"👍🏻 <a href='tg://user?id={user_id}'>Of lavender</a> The mouth is closed! 🤐")
+            await message.reply_text(f"👍🏻 <a href='tg://user?id={user_id}'>Oғ Lᴀᴠᴇɴᴅᴇʀ</a> Tʜᴇ Mᴏᴜᴛʜ Is Cʟᴏsᴇᴅ! 🤐")
 
 
 @Client.on_message(filters.command("tmute"))
@@ -79,16 +79,16 @@ async def temp_mute_user(_, message):
     user_id, user_first_name = extract_user(message)
     until_date_val = extract_time(message.command[1])
     if until_date_val is None:
-        return await message.reply_text(f"Invalid time type specified. Expected m, h, or d, Got it: {message.command[1][-1]}")        
+        return await message.reply_text(f"Iɴᴠᴀʟɪᴅ Tɪᴍᴇ Tʏᴘᴇ Sᴘᴇᴄɪғɪᴇᴅ. Exᴘᴇᴄᴛᴇᴅ m, h, or d, Gᴏᴛ Iᴛ: {message.command[1][-1]}")        
     try:
         await message.chat.restrict_member(user_id=user_id, permissions=ChatPermissions(), until_date=until_date_val)
     except Exception as error:
         await message.reply_text(str(error))
     else:
         if str(user_id).lower().startswith("@"):
-            await message.reply_text(f"Be quiet for a while! 😠 {user_first_name} muted for {message.command[1]}!")
+            await message.reply_text(f"Bᴇ Qᴜɪᴇᴛ Fᴏʀ A Wʜɪʟᴇ ! 😠 {user_first_name} Mᴜᴛᴇᴅ Fᴏʀ {message.command[1]}!")
         else:
-            await message.reply_text(f"Be quiet for a while! 😠 <a href='tg://user?id={user_id}'>Of lavender</a>  Mouth  muted for {message.command[1]}!")                
+            await message.reply_text(f" Bᴇ Qᴜɪᴇᴛ Fᴏʀ A Wʜɪʟᴇ ! 😠 <a href='tg://user?id={user_id}'>Oғ Lᴀᴠᴇɴᴅᴇʀ</a>  Mᴏᴜᴛʜ  Mᴜᴛᴇᴅ Fᴏʀ {message.command[1]}!")                
 
 
 @Client.on_message(filters.command("pin") & filters.create(admin_filter))
@@ -190,11 +190,11 @@ async def dkick(client, message):
 async def instatus(client, message):
     user = await client.get_chat_member(message.chat.id, message.from_user.id)
     if user.status not in (enums.ChatMemberStatus.ADMINISTRATOR, enums.ChatMemberStatus.OWNER, ADMINS):
-        note = await message.reply("you are not administrator in this chat")
+        note = await message.reply("Yᴏᴜ Aʀᴇ Nᴏᴛ Aᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ Iɴ Tʜɪs Cʜᴀᴛ")
         await asyncio.sleep(3)
         await message.delete()
         return await note.delete()
-    sent_message = await message.reply_text("🔁 Processing.....")
+    sent_message = await message.reply_text("🔁 Pʀᴏᴄᴇssɪɴɢ.....")
     recently = 0
     within_week = 0
     within_month = 0
@@ -211,9 +211,9 @@ async def instatus(client, message):
         elif member.user.status == enums.UserStatus.LONG_AGO: long_time_ago += 1
         else: uncached += 1
     if message.chat.type == enums.ChatType.CHANNEL:
-        await sent_message.edit(f"{message.chat.title}\nChat Member Status\n\nRecently - {recently}\nWithin Week - {within_week}\nWithin Month - {within_month}\nLong Time Ago - {long_time_ago}\n\nDeleted Account - {deleted_acc}\nBot - {bot}\nUnCached - {uncached}")            
+        await sent_message.edit(f"{message.chat.title}\nCʜᴀᴛ Mᴇᴍʙᴇʀ Sᴛᴀᴛᴜs\n\nRᴇᴄᴇɴᴛʟʏ - {recently}\nWɪᴛʜɪɴ Wᴇᴇᴋ - {within_week}\nWɪᴛʜɪɴ Mᴏɴᴛʜ - {within_month}\nLᴏɴɢ Tɪᴍᴇ Aɢᴏ - {long_time_ago}\n\nDᴇʟᴇᴛᴇᴅ Aᴄᴄᴏᴜɴᴛ - {deleted_acc}\nBᴏᴛ - {bot}\nUɴᴄᴀᴄʜᴇᴅ - {uncached}")            
     elif message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        await sent_message.edit(f"{message.chat.title}\nChat Member Status\n\nRecently - {recently}\nWithin Week - {within_week}\nWithin Month - {within_month}\nLong Time Ago - {long_time_ago}\n\nDeleted Account - {deleted_acc}\nBot - {bot}\nUnCached - {uncached}")
+        await sent_message.edit(f"{message.chat.title}\nCʜᴀᴛ Mᴇᴍʙᴇʀ Sᴛᴀᴛᴜs\n\nRᴇᴄᴇɴᴛʟʏ - {recently}\nWɪᴛʜɪɴ Wᴇᴇᴋ - {within_week}\nWɪᴛʜɪɴ Mᴏɴᴛʜ - {within_month}\nLᴏɴɢ Tɪᴍᴇ Aɢᴏ - {long_time_ago}\n\nDᴇʟᴇᴛᴇᴅ Aᴄᴄᴏᴜɴᴛ - {deleted_acc}\nBᴏᴛ - {bot}\nUɴᴄᴀᴄʜᴇᴅ - {uncached}")
         
             
   
