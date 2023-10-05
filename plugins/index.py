@@ -35,9 +35,9 @@ async def index_files(bot, query):
         return await query.answer('Wᴀɪᴛ Uɴᴛɪʟ Pʀᴇᴠɪᴏᴜs Pʀᴏᴄᴇss Cᴏᴍᴘʟᴇᴛᴇ', show_alert=True)
     msg = query.message
     button = InlineKeyboardMarkup([[
-        InlineKeyboardButton('🚫 ᴄᴀɴᴄᴇʟʟ', "index_cancel")
+        InlineKeyboardButton('🚫 Cᴀɴᴄᴇʟ', "index_cancel")
     ]])
-    await msg.edit("ɪɴᴅᴇxɪɴɢ ɪs sᴛᴀʀᴛᴇᴅ ✨", reply_markup=button)                        
+    await msg.edit("Iɴᴅᴇxɪɴɢ Is Sᴛᴀʀᴛᴇᴅ ✨", reply_markup=button)                        
     try: chat = int(chat)
     except: chat = chat
     await index_files_to_db(int(lst_msg_id), chat, msg, bot)
@@ -57,29 +57,29 @@ async def send_for_index(bot, message):
         chat_id = message.forward_from_chat.username or message.forward_from_chat.id
     else: return
     try: await bot.get_chat(chat_id)
-    except ChannelInvalid: return await message.reply('This may be a private channel / group. Make me an admin over there to index the files.')
-    except (UsernameInvalid, UsernameNotModified): return await message.reply('Invalid Link specified.')
+    except ChannelInvalid: return await message.reply('Tʜɪs Mᴀʏ Bᴇ A Pʀɪᴠᴀᴛᴇ Cʜᴀɴɴᴇʟ / Gʀᴏᴜᴘ. Mᴀᴋᴇ Mᴇ Aɴ Aᴅᴍɪɴ Oᴠᴇʀ Tʜᴇʀᴇ Tᴏ Iɴᴅᴇx Tʜᴇ Fɪʟᴇs.')
+    except (UsernameInvalid, UsernameNotModified): return await message.reply('Iɴᴠᴀʟɪᴅ Lɪɴᴋ Sᴘᴇᴄɪғɪᴇᴅ.')
     except Exception as e: return await message.reply(f'Errors - {e}')
     try: k = await bot.get_messages(chat_id, last_msg_id)
-    except: return await message.reply('Make Sure That Iam An Admin In The Channel, if channel is private')
-    if k.empty: return await message.reply('This may be group and iam not a admin of the group.')
+    except: return await message.reply('Mᴀᴋᴇ Sᴜʀᴇ Tʜᴀᴛ Iᴀᴍ Aɴ Aᴅᴍɪɴ Iɴ Tʜᴇ Cʜᴀɴɴᴇʟ, Iғ Cʜᴀɴɴᴇʟ Is Pʀɪᴠᴀᴛᴇ')
+    if k.empty: return await message.reply('Tʜɪs Mᴀʏ Bᴇ Gʀᴏᴜᴘ Aɴᴅ I Aᴍ Nᴏᴛ A Aᴅᴍɪɴ Oғ Tʜᴇ Gʀᴏᴜᴘ.')
     buttons = InlineKeyboardMarkup([[
-        InlineKeyboardButton('✨ ʏᴇꜱ', callback_data=f'index#{chat_id}#{last_msg_id}')
+        InlineKeyboardButton('🩵 Yᴇꜱ', callback_data=f'index#{chat_id}#{last_msg_id}')
         ],[
-        InlineKeyboardButton('🚫 ᴄʟᴏꜱᴇ', callback_data='close_data')
+        InlineKeyboardButton('🚫 Cʟᴏꜱᴇ', callback_data='close_data')
     ]])               
-    await message.reply(f'Do You Want To Index This Channel/ Group ?\n\nChat ID/ Username: <code>{chat_id}</code>\nLast Message ID: <code>{last_msg_id}</code>', reply_markup=buttons)
+    await message.reply(f'Dᴏ Yᴏᴜ Wᴀɴᴛ Tᴏ Iɴᴅᴇx Tʜɪs Cʜᴀɴɴᴇʟ/ Gʀᴏᴜᴘ ?\n\nCʜᴀᴛ ID/ Usᴇʀɴᴀᴍᴇ: <code>{chat_id}</code>\nLᴀsᴛ Mᴇssᴀɢᴇ ID: <code>{last_msg_id}</code>', reply_markup=buttons)
     
 
 @Client.on_message(filters.command('setskip') & filters.user(ADMINS))
 async def set_skip_number(bot, message):
     if len(message.command) == 2:
         try: skip = int(message.text.split(" ", 1)[1])
-        except: return await message.reply("Skip Number Should Be An Integer.")
-        await message.reply(f"Successfully Set Skip Number As {skip}")
+        except: return await message.reply("Sᴋɪᴘ Nᴜᴍʙᴇʀ Sʜᴏᴜʟᴅ Bᴇ Aɴ Iɴᴛᴇɢᴇʀ.")
+        await message.reply(f"Sᴜᴄᴄᴇssғᴜʟʟʏ Sᴇᴛ Sᴋɪᴘ Nᴜᴍʙᴇʀ As {skip}")
         temp.CURRENT = int(skip)
     else:
-        await message.reply("Give Me A Skip Number")
+        await message.reply("Gɪᴠᴇ Mᴇ A Sᴋɪᴘ Nᴜᴍʙᴇʀ")
 
 
 async def index_files_to_db(lst_msg_id, chat, msg, bot):
@@ -95,17 +95,17 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
             temp.CANCEL = False
             async for message in bot.iter_messages(chat, lst_msg_id, temp.CURRENT):
                 if temp.CANCEL:
-                    await msg.edit(f"Successfully Cancelled!!\n\nSaved <code>{total_files}</code> files to dataBase!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>")
+                    await msg.edit(f"Sᴜᴄᴄᴇssғᴜʟʟʏ Cᴀɴᴄᴇʟʟᴇᴅ!!\n\nSᴀᴠᴇᴅ <code>{total_files}</code> Fɪʟᴇs Tᴏ Dᴀᴛᴀʙᴀsᴇ!\nDᴜᴘʟɪᴄᴀᴛᴇ Fɪʟᴇs Sᴋɪᴘᴘᴇᴅ: <code>{duplicate}</code>\nDᴇʟᴇᴛᴇᴅ Mᴇssᴀɢᴇs Sᴋɪᴘᴘᴇᴅ: <code>{deleted}</code>\nNᴏɴ-Mᴇᴅɪᴀ Mᴇssᴀɢᴇs Sᴋɪᴘᴘᴇᴅ: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nEʀʀᴏʀs Oᴄᴄᴜʀʀᴇᴅ: <code>{errors}</code>")
                     break
                 current += 1
                 if current % 100 == 0:
                     can = [[InlineKeyboardButton('Cancel', callback_data='index_cancel')]]
                     reply = InlineKeyboardMarkup(can)
                     try:
-                        await msg.edit_text(text=f"Total Messages Fetched: <code>{current}</code>\nTotal Messages Saved: <code>{total_files}</code>\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>", reply_markup=reply)       
+                        await msg.edit_text(text=f"Tᴏᴛᴀʟ Mᴇssᴀɢᴇs Fᴇᴛᴄʜᴇᴅ: <code>{current}</code>\nTᴏᴛᴀʟ Mᴇssᴀɢᴇs Sᴀᴠᴇᴅ: <code>{total_files}</code>\nDᴜᴘʟɪᴄᴀᴛᴇ Fɪʟᴇs Sᴋɪᴘᴘᴇᴅ: <code>{duplicate}</code>\nDᴇʟᴇᴛᴇᴅ Mᴇssᴀɢᴇs Sᴋɪᴘᴘᴇᴅ: <code>{deleted}</code>\nNᴏɴ-Mᴇᴅɪᴀ Mᴇssᴀɢᴇs Sᴋɪᴘᴘᴇᴅ: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nEʀʀᴏʀs Oᴄᴄᴜʀʀᴇᴅ: <code>{errors}</code>", reply_markup=reply)       
                     except FloodWait as t:
                         await asyncio.sleep(t.value)
-                        await msg.edit_text(text=f"Total Messages Fetched: <code>{current}</code>\nTotal Messages Saved: <code>{total_files}</code>\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>", reply_markup=reply)                          
+                        await msg.edit_text(text=f"Tᴏᴛᴀʟ Mᴇssᴀɢᴇs Fᴇᴛᴄʜᴇᴅ: <code>{current}</code>\nTᴏᴛᴀʟ Mᴇssᴀɢᴇs Sᴀᴠᴇᴅ: <code>{total_files}</code>\nDᴜᴘʟɪᴄᴀᴛᴇ Fɪʟᴇs Sᴋɪᴘᴘᴇᴅ: <code>{duplicate}</code>\nDᴇʟᴇᴛᴇᴅ Mᴇssᴀɢᴇs Sᴋɪᴘᴘᴇᴅ: <code>{deleted}</code>\nNᴏɴ-Mᴇᴅɪᴀ Mᴇssᴀɢᴇs Sᴋɪᴘᴘᴇᴅ: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nEʀʀᴏʀs Oᴄᴄᴜʀʀᴇᴅ: <code>{errors}</code>", reply_markup=reply)                          
                 if message.empty:
                     deleted += 1
                     continue
@@ -132,7 +132,7 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
             logger.exception(e)
             await msg.edit(f'Error: {e}')
         else:
-            await msg.edit(f'Succesfully Saved <code>{total_files}</code> To Database!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media Messages Skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>')
+            await msg.edit(f'Sᴜᴄᴄᴇsғᴜʟʟʏ Sᴀᴠᴇᴅ <code>{total_files}</code> Tᴏ Dᴀᴛᴀʙᴀsᴇ!\nDᴜᴘʟɪᴄᴀᴛᴇ Fɪʟᴇs Sᴋɪᴘᴘᴇᴅ: <code>{duplicate}</code>\nDᴇʟᴇᴛᴇᴅ Mᴇssᴀɢᴇs Sᴋɪᴘᴘᴇᴅ: <code>{deleted}</code>\nNᴏɴ-Mᴇᴅɪᴀ Mᴇssᴀɢᴇs Sᴋɪᴘᴘᴇᴅ: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nEʀʀᴏʀs Oᴄᴄᴜʀʀᴇᴅ: <code>{errors}</code>')
 
 
 
