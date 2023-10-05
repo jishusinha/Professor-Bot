@@ -14,13 +14,13 @@ async def share_text(client, message):
         input_text = reply.text or reply.caption
     else:
         await message.reply_text(
-            text=f"**Notice:**\n\n1. Reply Any Messages.\n2. No Media Support\n\n**Any Question Join Support Chat**",                
+            text=f"**Nᴏᴛɪᴄᴇ:**\n\n1. Rᴇᴘʟʏ Aɴʏ Mᴇssᴀɢᴇs.\n2. Nᴏ Mᴇᴅɪᴀ Sᴜᴘᴘᴏʀᴛ\n\n**Aɴʏ Qᴜᴇsᴛɪᴏɴ Jᴏɪɴ Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ**",                
             reply_to_message_id=reply_id,               
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Support Chat", url=f"https://t.me/MadflixSupport_Chat")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ", url=f"https://t.me/MadflixBotz_Support")]])
             )                                                   
         return
     await message.reply_text(
-        text=f"**Here is Your Sharing Text 👇**\n\nhttps://t.me/share/url?url=" + quote(input_text),
+        text=f"**Hᴇʀᴇ Is Yᴏᴜʀ Sʜᴀʀɪɴɢ Tᴇxᴛ 👇**\n\nhttps://t.me/share/url?url=" + quote(input_text),
         reply_to_message_id=reply_id,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("♂️ Share", url=f"https://t.me/share/url?url={quote(input_text)}")]])       
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("♂️ Sʜᴀʀᴇ", url=f"https://t.me/share/url?url={quote(input_text)}")]])       
     )
