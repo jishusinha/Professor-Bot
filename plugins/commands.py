@@ -38,7 +38,7 @@ async def start(client, message):
             InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''), 
             InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/Madflix_Botz")
             ],[      
-            InlineKeyboardButton("Hᴇʟᴩ 🏷️", callback_data="help"),
+            InlineKeyboardButton("Hᴇʟᴩ ♻️", callback_data="help"),
             InlineKeyboardButton("Aʙᴏᴜᴛ 💌", callback_data="about")
         ]]
         m = await message.reply_sticker("CAACAgUAAxkBAAIDHmULwk9jCuCIJm_rMefrRv8gJlsKAAInAQACyJRkFOI9YoCRRKaaMAQ") 
@@ -74,7 +74,7 @@ async def start(client, message):
             InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''), 
             InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/Madflix_Botz")
             ],[      
-            InlineKeyboardButton("Hᴇʟᴩ 🏷️", callback_data="help"),
+            InlineKeyboardButton("Hᴇʟᴩ ♻️", callback_data="help"),
             InlineKeyboardButton("Aʙᴏᴜᴛ 💌", callback_data="about")
         ]]
         m = await message.reply_sticker("CAACAgUAAxkBAAIDHmULwk9jCuCIJm_rMefrRv8gJlsKAAInAQACyJRkFOI9YoCRRKaaMAQ")
