@@ -27,7 +27,7 @@ async def p_paste(message, extension=None):
             "raw": f"https://pasty.lus.pm/{response['id']}/raw",
             "bin": "Pasty",
         }
-    return {"error": "UNABLE TO REACH pasty.lus.pm"}
+    return {"error": "𝚄𝙽𝙰𝙱𝙻𝙴 𝚃𝙾 𝚁𝙴𝙰𝙲𝙷 pasty.lus.pm"}
 
 
 
