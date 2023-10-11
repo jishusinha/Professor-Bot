@@ -16,7 +16,7 @@ async def share_text(client, message):
         await message.reply_text(
             text=f"**Nᴏᴛɪᴄᴇ:**\n\n1. Rᴇᴘʟʏ Aɴʏ Mᴇssᴀɢᴇs.\n2. Nᴏ Mᴇᴅɪᴀ Sᴜᴘᴘᴏʀᴛ\n\n**Aɴʏ Qᴜᴇsᴛɪᴏɴ Jᴏɪɴ Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ**",                
             reply_to_message_id=reply_id,               
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ", url=f"https://t.me/MadflixBotz_Support")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ", url=f"https://t.me/MadflixBots_Support")]])
             )                                                   
         return
     await message.reply_text(
