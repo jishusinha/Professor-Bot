@@ -12,14 +12,17 @@
         },
         "BOT_TOKEN": {
             "description": "Your bot token.",
+            "value" : "6641619434:AAGHsuzO3hH5QVUtycrZoldWS8LlYhCcjro",
             "required": true
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
+            "value" : "20126690",
             "required": true
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
+            "value" : "3ea37bd78cb3a8ca92caac7a23b542d9",
             "required": true
         },
         "CHANNELS": {
@@ -28,6 +31,7 @@
         },
         "ADMINS": {
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
+            "value" : "6585310949",
             "required": true
         },
         "SHORT_API": {
@@ -44,10 +48,12 @@
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "value" : "-1002050347624",
             "required": true                              
         },
         "AUTH_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "value" : "-1001934417115",
             "required": false
         },           
         "MAX_RIST_BTNS": {
@@ -57,11 +63,12 @@
         },
         "CUSTOM_FILE_CAPTION": {
             "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
-            "value": "Hey {mention}👋\n\n{file_name}\n\n🔘 Size - {file_size}\n\n╭─── • ❰ @Madflix_Botz ❱ • ────➤\n┣ ▫️ @MadflixOfficial_Movies\n┣ ▫️ @MadflixOfficial_Webseries\n╰─────── • ◆ • ───────➤",
+            "value": "Hᴇʏ {mention}  \n\nNᴀᴍᴇ ➠ : {file_name} \n\nSɪᴢᴇ ➠ : {file_size}",
             "required": false
         },
         "DATABASE_URL": {
             "description": "mongoDB URI.",
+            "value" : "mongodb+srv://jishusinha53:jishu9865@cluster0.wunnquf.mongodb.net/?retryWrites=true&w=majority",
             "required": true
         },
         "DATABASE_NAME": {
@@ -76,7 +83,7 @@
         },
         "SUPPORT_CHAT": {
             "description": "Updated Channel Username Without @ Not Chanel ID",
-            "value": "MadflixSupport_Chat",
+            "value": "MadflixBots_Support",
             "required": false
         },
         "IMDB": {
@@ -111,7 +118,7 @@
         },       
         "FORCE_SUB_TEXT": {
             "description": "custom force sub text (use ** = bold / use ``=  mono)",
-            "value": "Sᴏʀʀʏ Bʀᴏ Yᴏᴜʀ Nᴏᴛ Jᴏɪɴᴇᴅ Mʏ Cʜᴀɴɴᴇʟ Sᴏ Pʟᴇᴀsᴇ Cʟɪᴄᴋ Jᴏɪɴ Bᴜᴛᴛᴏɴ Tᴏ Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ Aɴᴅ Tʀʏ Aɢᴀɪɴ",
+            "value": "<b>Hᴇʏ {mention} \n\nYᴏᴜ Nᴇᴇᴅ Tᴏ Jᴏɪɴ Iɴ Mʏ Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Mᴇ\n\nKɪɴᴅʟʏ Pʟᴇᴀsᴇ Jᴏɪɴ Cʜᴀɴɴᴇʟ",
             "required": false
         },
         "AUTH_GROUPS": {
@@ -151,6 +158,7 @@
         },
         "RemoveBG_API": {
             "description": "background remover website api key. get from https://www.remove.bg/b/background-removal-api",
+            "value" : "KTP8Kwb5C9We4NNu3LnXEtP9",
             "required": false 
         },
         "P_TTI_SHOW_OFF": { 
