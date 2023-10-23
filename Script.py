@@ -8,16 +8,16 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
     HELP_TXT = "Hᴇʏ {}\nHᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"
 
     ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
-✯ Dᴇᴠᴇʟᴏᴩᴇʀ: <a herf=https://t.me/MadflixOfficials>Mᴀᴅғʟɪx Bᴏᴛᴢ</a>
+✯ Dᴇᴠᴇʟᴏᴩᴇʀ: <a herf=https://t.me/Madflix_Bots>Mᴀᴅғʟɪx Bᴏᴛᴢ</a>
 ✯ Cᴏᴅᴇᴅ Oɴ: Pʏᴛʜᴏɴ/Pʏʀᴏɢʀᴀᴍ
 ✯ Mʏ DᴀᴛᴀBᴀꜱᴇ: Mᴏɴɢᴏ-DB
 ✯ Mʏ Sᴇʀᴠᴇʀ: Hᴇʀᴏᴋᴜ
-✯ Mʏ Vᴇʀꜱɪᴏɴ: Pʀᴏꜰᴇꜱꜱᴏʀ Bᴏᴛ ᴠ4.5.0</b>"""
+✯ Mʏ Vᴇʀꜱɪᴏɴ: ᴠ4.5.0</b>"""
    
     SOURCE_TXT = """<b>NOTE:</b>
 - Sᴏᴜʀᴄᴇ Cᴏᴅᴇ Hᴇʀᴇ ◉› :<a href=https://github.com/jishusinha/Professor-Bot>Cʟɪᴄᴋ Hᴇʀᴇ</a>
 
-<b>Dᴇᴠᴇʟᴏᴩᴇʀ: <a herf=https://t.me/MadflixOfficials>Mᴀᴅғʟɪx Bᴏᴛᴢ</a></b>"""
+<b>Dᴇᴠᴇʟᴏᴩᴇʀ: <a herf=https://t.me/Madflix_Bots>Mᴀᴅғʟɪx Bᴏᴛᴢ</a></b>"""
 
     FILE_TXT = """<b>➤ Hᴇʟᴘ Fᴏʀ Fɪʟᴇ Sᴛᴏʀᴇ</b>
 
@@ -45,7 +45,7 @@ Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs
 • /delg - Tᴏ Dᴇʟᴇᴛᴇ A Sᴘᴇᴄɪғɪᴄ Gʟᴏʙᴀʟ Fɪʟᴛᴇʀ
 • /delallg - Tᴏ Dᴇʟᴇᴛᴇ Aʟʟ Gʟᴏʙᴀʟ Fɪʟᴛᴇʀꜱ
 
-• /g_filter off Usᴇ Tʜɪs Cᴏᴍᴍᴏᴀɴᴅ + on/offғ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ Tᴏ Cᴏɴᴛʀᴏʟ Gʟᴏʙᴀʟ Fɪʟᴛᴇʀ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ"""
+• /g_filter off Usᴇ Tʜɪs Cᴏᴍᴍᴏᴀɴᴅ + on/off Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ Tᴏ Cᴏɴᴛʀᴏʟ Gʟᴏʙᴀʟ Fɪʟᴛᴇʀ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ"""
 
     MANUELFILTER_TXT = """<b>Hᴇʟᴘ Fᴏʀ Fɪʟᴛᴇʀs</b>
 
