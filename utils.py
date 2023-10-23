@@ -138,7 +138,7 @@ def list_to_str(k):
         return ' '.join(f'{elem}, ' for elem in k)
 
 __repo__ = "https://github.com/jishusinha/Professor-Bot"
-__version__ = "PROFESSOR-BOT ᴠ4.5.0"
+__version__ = "ᴠ4.5.0"
 __license__ = "GNU General Public License V2"
 __copyright__ = "Copyright (C) 2023-present Jishu Developer <https://github.com/jishusinha>"
 
